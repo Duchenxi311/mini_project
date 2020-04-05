@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainFace">
+
+    <ImageView
+        android:id="@+id/iv_meet"
+        android:layout_width="wrap_content"
+        android:layout_height="240dp"
+        android:src="@mipmap/meet" />
+
+    <TextView
+        android:id="@+id/tv_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_meet"
+        android:layout_marginTop="42dp"
+        android:layout_marginLeft="50dp"
+        android:text="Please enjoy your survey!!!"
+        android:textColor="#001111"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tv_2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_1"
+        android:layout_marginTop="42dp"
+        android:layout_marginLeft="50dp"
+        android:text="Click the buttons below to realize various functions"
+        android:textColor="#001111"
+        android:textSize="24sp" />
+
+    <RadioGroup
+        android:id="@+id/rg_mainface"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:gravity="center_vertical"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_main_mainface"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/mianbg"
+            android:background="@mipmap/item_tdword"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/mainface"
+            android:textColor="#000000" />
+
+        <RadioButton
+            android:id="@+id/rb_main_scan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@mipmap/scan_button_50"
+            android:gravity="center"
+            android:text="@string/scan"
+            android:textColor="#000000" />
+
+        <RadioButton
+            android:id="@+id/rb_main_create"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/fabu_50"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/publish"
+            android:textColor="#000000"/>
+
+        <RadioButton
+            android:id="@+id/rb_main_mine"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/mine"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/mineface"
+            android:textColor="#000000" />
+    </RadioGroup>
+</RelativeLayout>
